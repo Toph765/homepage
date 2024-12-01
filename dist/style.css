@@ -70,8 +70,7 @@ header::before {
 }
 
 h1 {
-  width: 100%; /* 
-  border: 2px solid white; */
+  width: 100%;
   position: absolute;
   color: white;
   bottom: 3px;
