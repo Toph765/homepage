@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --font-H1: "Lora", serif;
+  --font-main: "Noto Sans", sans-serif;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -31,6 +38,7 @@ header {
   flex-direction: column;
   justify-content: center;
   padding: 24px;
+  font-family: var(--font-main);
 }
 
 .header-second-cont h2,
@@ -51,12 +59,15 @@ header {
 }
 
 h1 {
+  width: 100%; /* 
+  border: 2px solid white; */
   position: absolute;
   color: white;
   bottom: 3px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  font-size: 18px;
+  text-align: center;
+  font-family: var(--font-H1);
+  font-size: 2.4rem;
+  font-weight: normal;
 }
 
 main {
