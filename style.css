@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --font-H1: "Lora", serif;
+  --font-header: "Lora", serif;
   --font-main: "Noto Sans", sans-serif;
 }
 
@@ -9,6 +9,20 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+h2,
+h3 {
+  font-family: var(--font-header);
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.2rem;
 }
 
 header {
@@ -50,6 +64,7 @@ header::before {
   justify-content: center;
   padding: 24px;
   font-family: var(--font-main);
+  font-size: 1.2rem;
 }
 
 .header-second-cont h2,
@@ -69,13 +84,17 @@ header::before {
   font-size: 20px;
 }
 
+.devicon-github-original {
+  font-size: 1.6rem;
+}
+
 h1 {
   width: 100%;
   position: absolute;
   color: white;
   bottom: 3px;
   text-align: center;
-  font-family: var(--font-H1);
+  font-family: var(--font-header);
   font-size: 2.4rem;
   font-weight: normal;
 }
@@ -83,6 +102,7 @@ h1 {
 main {
   padding: 3.8rem;
   font-family: var(--font-main);
+  font-size: 1rem;
 }
 
 .projects {
@@ -119,12 +139,21 @@ footer {
   gap: 1.2rem;
   padding: 3.8rem;
   font-family: var(--font-main);
+  font-size: 1.2rem;
 }
 
 .footer-first-cont {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.contact-details {
+  padding: 1.2rem 0;
+}
+
+.contact-details > * {
+  padding: 0.4rem 0;
 }
 
 picture {
@@ -143,5 +172,6 @@ a {
 }
 
 .icon {
-  width: 16px;
+  width: 1.6rem;
+  vertical-align: top;
 }
